@@ -4,12 +4,12 @@
 
 - Linux
 - Pacotes LaTeX mínimos:
-  - `latexmk`
-  - `texlive-latex-base`
-  - `texlive-latex-recommended`
-  - `texlive-latex-extra`
-  - `texlive-fonts-recommended`
-  - `texlive-lang-portuguese`
+    - `latexmk`
+    - `texlive-latex-base`
+    - `texlive-latex-recommended`
+    - `texlive-latex-extra`
+    - `texlive-fonts-recommended`
+    - `texlive-lang-portuguese`
 
 ### Instalação (Ubuntu/Debian)
 
