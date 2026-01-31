@@ -1,0 +1,6 @@
+# Send all build artifacts to build/
+$out_dir = 'build';
+$aux_dir = 'build';
+$pdf_mode = 1;
+$interaction = 'nonstopmode';
+$halt_on_error = 1;

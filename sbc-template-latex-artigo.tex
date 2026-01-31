@@ -1,0 +1,199 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage[brazil]{babel} 
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage[pdftex]{hyperref}
+\usepackage{indentfirst}
+
+     
+\sloppy
+
+\title{Título do Trabalho: subtítulo}
+
+\author{Beathriz Laurent Carlos Muniz\inst{1}, Nome do Autor Dois\inst{2}, \\Nome do Autor Três\inst{3}, Nome do Autor Quatro\inst{4}, \\Marcelo Pedral Mota\inst{5}, Gilton José Ferreira da Silva\inst{2} } 
+
+\address{Departamento de Computação (DCOMP)\\ Universidade Federal de Sergipe
+  (UFS)\\
+  Av. Marechal Rondon, s/n -- Jardim Rosa Elze -- CEP 49100-000 \\São Cristóvão -- SE -- Brazil
+  \email{beathriz.muniz@dcomp.ufs.br, autor02@dcomp.ufs.br}
+  \email{autor03@dcomp.ufs.br, autor04@dcomp.ufs.br}
+  \email{marcelo.mota@dcomp.ufs.br, gilton@dcomp.ufs.br}
+}
+
+\begin{document} 
+
+\maketitle
+
+\begin{abstract}
+\textbf {Context:} Appear the work context. \textbf {Objective:} This work aims to ... \textbf {Method:} Describe the methodological procedures used in the research. \textbf {Results:} Discuss the results of this work. \textbf {Conclusions:} Show the conclusions that were found.
+\end{abstract}
+     
+\begin{resumo} 
+  \textbf{Contexto:} Aparentar o contexto do trabalho. \textbf{Objetivo:} Este trabalho tem como objetivo ... \textbf{Método:} Descrever os procedimentos metodológicos utilizados na pesquisa. \textbf{Resultados:} Discutir sobre os resultados advindos deste trabalho. \textbf{Conclusões:} Mostrar as conclusões que foram encontradas.
+\end{resumo}
+
+
+\section{Introdução} \label{sec:introducao}
+(Contexto)
+
+Esta seção apresenta o contexto no qual o projeto está inserido, destacando o problema prático ou científico que motivou sua concepção. São abordadas as lacunas existentes, a relevância do tema, o público impactado e a justificativa para a adoção de uma abordagem estruturada de gerenciamento de projetos, especificamente o Project Model Canvas, como instrumento de planejamento e comunicação do projeto.
+
+*No mínimo 1 parágrafo
+
+
+\subsection{Justificativa}
+\label{sec:justificativa}
+(Por quê?)
+
+A justificativa descreve as necessidades, demandas não atendidas ou oportunidades que fundamentam a proposição do projeto. Esta seção explicita o problema central que se pretende resolver, sustentado por evidências empíricas, dados institucionais, literatura científica ou normativas vigentes. Busca-se demonstrar a relevância científica, social, organizacional ou econômica do projeto, legitimando sua execução.
+
+
+\section{Objetivos} 
+Objetivos... 1 parágrafo;
+
+\section{Benefícios} 
+
+Benefícios... 1 parágrafo;
+
+\section{Descrição das próximas seções} 
+Descrição das próximas seções do trabalho ... 1 parágrafo.
+
+
+\section{O que será feito? } \label{sec:oque}
+
+Breve descrição das próximas subseções...\\
+
+\subsection{Produto}
+
+Descrição do Produto...
+
+\subsection{Trabalhos Relacionados}
+
+Apresentar uma descrição dos trabalhos (artigos semelhantes que foram buscados nas bases de pesquisa).
+
+\subsection{Arquitetura Visão-Modelo 4+1}
+
+Descrição da Arquitetura conforme a Visão-Modelo 4+1.
+
+A arquitetura visão-modelo 4+1 foi desenvolvida por Philippe Cruchten com o objetivo de descrever o funcionamento de sistemas de software e é baseado no uso de múltiplas visões concorrentes.
+
+As visões são usadas para mostrar o sistema sob várias perspectivas, como usuário final, desenvolvedores e gerentes de projetos.
+
+As quatro visões de modelo são: visão lógica (1), visão de desenvolvimento (2), visão de processo (3) e visão física (4). A visão de caso de uso é usada para ilustrar a arquitetura e representa a visão +1.
+
+Visão lógica : Se concentra na funcionalidade que o sistema disponibiliza para o usuároi final. Os diagramas UML usados para representar a visão lógica incluem: Diagrama de classes, Diagrama de comunicação e Diagrama de sequencia. 
+Visão de desenvolvimento : Ilustra o sistema do ponto de vista do programador e se preocupa com o gerenciamento de projeto. Esta visão também é conhecida como visão de implementação. Usa o Diagrama de componentes ou Diagrama de pacotes. 
+Visão de processo : Permite visualizar as partes dinâmicas do sistema, explicar os processos e como eles se comunicam, focando no comportamento do sistema. A visão de processo se encarrega da concorrência, distribuição, integração, performance e escalabilidade. O Diagrama de atividades é usado nesta visão.
+Visão física : Mostra o sistema do ponto de vista do egenheiro. Se preocupa com a topologia dos componentes de software (no contexto físico) assim como a comunicação entre esses componentes. Esta visão também é conhecida como visão de implantação. Os diagramas UML usados para descrever esta visão incluem o Diagrama de implantação.
+Visão de caso de uso : Descreve a arquitetura do sistema através do uso de Diagramas de casos de uso. Cada diagrama descreve sequências de interações entre os objetos e processos. São usados para identificar elementos de arquiteturra e ilustrar e validar o design de arquitetura.
+
+Mais informações no link: 
+\url{http://www.basef.com.br/old/uml/204-arquitetura-visao-modelo-41}
+
+
+\subsection{Requisitos}
+
+Descrição dos Requisitos...
+
+
+\subsection{Telas do Sistema}
+
+Apresentar As telas referente aos fluxos dos processos de negócio;\\
+
+Obs.: Inclua Figuras, Tabelas, Quadros, Códigos, etc...
+
+
+A Figura \ref{fig:fluxo_sistema} apresenta um fluxo descrevendo o processo principal do sistema. 
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=12cm]
+{images/telas.jpg}
+\caption{Gráfico de prisma com a extração de dados}
+\label{fig:fluxo_sistema}
+\end{figure}
+
+
+
+
+\section{Quem fará o projeto}\label{sec:quem}
+
+Breve descrição das próximas subseções...
+
+\subsection{Stakeholders e Fatores Externos}
+parceiros externos necessários para alcançar as metas.
+
+
+\subsubsection{Mapa de Empatia do Tomador de Decisão}
+
+Inserir o mapa de empatia do tomador de decisão e explicar suas dores e necessidades.
+
+
+\subsection{Equipe}
+Apresentar a Equipe e a funão de cada um
+
+\begin{itemize}
+  \item Beathriz Laurent Carlos Muniz: Pesquisa, correções e escrita do manuscrito;
+  \item Nome do Autor Dois: Pesquisa, correções e escrita do manuscrito;
+  \item Nome do Autor Três: Pesquisa, correções e escrita do manuscrito;
+  \item Nome do Autor Quatro: Pesquisa, correções e escrita do manuscrito;
+  \item Nome do Autor Cinco: Pesquisa, correções e escrita do manuscrito;
+  \item Gilton José Ferreira da Silva: Coordenação do trabalho, correções e direcionamentos da pesquisa.
+\end{itemize}
+
+\section{Como o projeto será feito?} \label{sec:Como}
+Breve descrição das próximas subseções...\\
+
+
+\subsection{Premissas}
+
+\subsection{Grupo de entregas}
+
+\subsection{Restrições}
+
+
+\section{Quando e quanto?} \label{sec:quandoquanto}
+Breve descrição das próximas subseções...\\
+
+
+
+
+\subsection{Riscos}
+
+\subsection{Linha do tempo}
+
+\subsection{Custos}
+
+
+\section{Limitações do Trabalho} \label{sec:ameacas}
+
+Inserir informações a cerca do que não foi apresentado no trabalho.
+
+
+
+\section{Considerações Finais} \label{sec:consideracoes}
+Descrição das atividades realizadas para atingir o objetivo do trabalho... 2 paragrafo\\
+Descrição da metodologia utilizada para atingir o objetivo do trabalho... 1 paragrafo\\
+Descrição dos pontos fracos ou que possam inviabilizar a credibilidade do trabalho... 1 paragrafo\\
+Descrição das atividades futuras para se concluir o trabalho... 1 paragrafo\\
+
+\section*{Agradecimentos} \label{sec:agradecimentos}
+
+Esta seção tem como objetivo agradecer a todas as pessoas e instituições que ajudaram na pesquisa, mas que não se qualificam para autoria.
+
+Alguns periódicos e eventos exigem que sejam informados os dados refentes ao às organizações que financiaram a pesquisa.
+
+
+
+
+
+
+
+\bibliographystyle{sbc}
+\bibliography{referencias}
+
+\end{document}
