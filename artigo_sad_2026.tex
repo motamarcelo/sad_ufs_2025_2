@@ -69,7 +69,7 @@ Breve descrição das próximas subseções...\\
 
 \subsection{Produto}
 
-Descrição do Produto...
+O \textbf{MangueSMART} é um protótipo funcional (MVP) de um Sistema de Apoio à Decisão (SAD) voltado ao planejamento urbano inteligente de Aracaju (SE). A solução consiste em uma plataforma digital que integra camadas de dados urbanos padronizadas e dashboards temáticos focados em uso do solo, mobilidade e infraestrutura. O objetivo é permitir que gestores monitorem indicadores e analisem cenários para promover uma cidade mais sustentável e inclusiva.
 
 \subsection{Trabalhos Relacionados}
 
@@ -97,8 +97,23 @@ Mais informações no link:
 
 \subsection{Requisitos}
 
-Descrição dos Requisitos...
+\subsubsection{Requisitos Funcionais (RF)}
 
+\begin{itemize}
+  \item \textbf{RF01:} O sistema deve exibir dashboards integrados com indicadores de ocupação territorial e mobilidade.
+  
+  \item \textbf{RF02:} O sistema deve permitir a visualização de camadas de dados urbanos em um mapa de Aracaju.
+  
+  \item \textbf{RF03:} O sistema deve fornecer ferramentas para a simulação de cenários de intervenção urbana.
+\end{itemize}
+
+\subsubsection{Requisitos Não-Funcionais (RNF)}
+
+\begin{itemize}
+  \item \textbf{RNF01:} A interface deve ser otimizada para a tomada de decisão gerencial, com visualização de dados consolidada.
+  
+  \item \textbf{RNF02:} O sistema deve garantir a integração de dados provenientes de diferentes departamentos municipais.
+\end{itemize}
 
 \subsection{Telas do Sistema}
 
@@ -108,6 +123,20 @@ Obs.: Inclua Figuras, Tabelas, Quadros, Códigos, etc...
 
 
 A Figura \ref{fig:fluxo_sistema} apresenta um fluxo descrevendo o processo principal do sistema. 
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=11cm]{images/dashboard_principal.png}
+\caption{Dashboard principal do \textbf{MangueSMART} com indicadores de ocupação territorial e mobilidade.}
+\label{fig:dashboard_principal}
+\end{figure}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=11cm]{images/simulacao_cenario.png}
+\caption{Interface de simulação de cenários de intervenção urbana.}
+\label{fig:simulacao_cenario}
+\end{figure}
 
 \begin{figure}[!ht]
 \centering
@@ -166,6 +195,23 @@ Breve descrição das próximas subseções...\\
 \subsection{Riscos}
 
 \subsection{Linha do tempo}
+
+O desenvolvimento do \textbf{MangueSMART} foi estruturado em três fases principais, conforme apresentado na Tabela \ref{tab:cronograma}. Esta organização permitiu que a equipe focasse inicialmente na modelagem dos dados de Aracaju antes de avançar para a interface funcional e validação.
+
+\begin{table}[!ht]
+\centering
+\caption{Cronograma de desenvolvimento do projeto.}
+\label{tab:cronograma}
+\begin{tabular}{@{}ll p{5.5cm}@{}}
+\toprule
+\textbf{Período} & \textbf{Fase} & \textbf{Principais Entregas} \\ 
+\midrule
+Mês 1 & Concepção & Levantamento de dados urbanos de Aracaju e definição do Project Model Canvas. \\
+Mês 2 & Prototipagem & Desenvolvimento da interface no Lovable e integração com mapas geoespaciais. \\
+Mês 3 & Validação & Testes de usabilidade com foco em personas e ajustes finais. \\ 
+\bottomrule
+\end{tabular}
+\end{table}
 
 \subsection{Custos}
 
