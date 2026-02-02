@@ -47,17 +47,19 @@ Esta seção apresenta o contexto no qual o projeto está inserido, destacando o
 
 \subsection{Justificativa}
 \label{sec:justificativa}
-(Por quê?)
+% --- SEÇÃO 1.1 ---
+O município de Aracaju enfrenta um cenário de crescimento urbano acelerado, caracterizado pela verticalização intensa em áreas centrais e pela expansão da malha urbana periférica, muitas vezes associada a assentamentos informais. Conforme aponta o Observatório das Metrópoles \cite{observatorio2023}, esse dinamismo impõe desafios complexos à gestão pública, resultando na saturação da infraestrutura e mobilidade deficiente.
 
-A justificativa descreve as necessidades, demandas não atendidas ou oportunidades que fundamentam a proposição do projeto. Esta seção explicita o problema central que se pretende resolver, sustentado por evidências empíricas, dados institucionais, literatura científica ou normativas vigentes. Busca-se demonstrar a relevância científica, social, organizacional ou econômica do projeto, legitimando sua execução.
+Além disso, iniciativas recentes buscam mitigar o déficit habitacional, como a destinação de áreas da União para regularização fundiária \cite{agenciagov2025} e projetos de revitalização do centro urbano \cite{govse2025}. No entanto, o processo decisório ainda enfrenta obstáculos significativos devido à fragmentação de dados entre diferentes secretarias e à carência de ferramentas analíticas integradas.
 
+A relevância do projeto \textit{MangueSMART} reside na mudança de paradigma para o conceito de cidades inteligentes, onde o planejamento deixa de ser reativo para se tornar orientado por dados (\textit{data-driven}). Segundo Iwasa \cite{iwasa2025}, o planejamento estratégico é vital para a efetivação dessas tecnologias. A implementação de um Sistema de Apoio à Decisão (SAD) justifica-se pela necessidade de articular indicadores de uso do solo e mobilidade, alinhando a administração pública a diretrizes de sustentabilidade e justiça urbana \cite{rdc2024}.
 
 \section{Objetivos} 
 Objetivos... 1 parágrafo;
 
 \section{Benefícios} 
 
-Benefícios... 1 parágrafo;
+O principal benefício do \textit{MangueSMART} é a entrega de um protótipo funcional de Sistema de Apoio à Decisão que centraliza dados urbanos dispersos. A literatura destaca que cidades inteligentes sustentáveis dependem de estratégias de implementação que integrem tecnologia e gestão \cite{rdc2024}. Espera-se reduzir drasticamente o tempo de análise técnica para aprovação de projetos e definição de políticas públicas. A longo prazo, o sistema visa alinhar o planejamento de Aracaju aos princípios de governança digital e eficiência, conforme discutido nas revisões sobre planejamento de \textit{Smart Cities} \cite{iwasa2025}.
 
 \section{Descrição das próximas seções} 
 Descrição das próximas seções do trabalho ... 1 parágrafo.
@@ -151,11 +153,13 @@ A Figura \ref{fig:fluxo_sistema} apresenta um fluxo descrevendo o processo princ
 
 \section{Quem fará o projeto}\label{sec:quem}
 
-Breve descrição das próximas subseções...
+A execução e validação do projeto envolvem uma estrutura colaborativa entre a academia, o setor público e a equipe de desenvolvimento.
 
-\subsection{Stakeholders e Fatores Externos}
-parceiros externos necessários para alcançar as metas.
+\subsection{Persona (Cliente-Alvo)}
+O sistema é desenhado para atender às necessidades de gestores públicos, representados pela ``Persona'' Mariana Souza, Diretora de Planejamento Urbano. O foco é resolver a fragmentação de dados que dificulta a análise de impactos urbanos, como os observados na expansão da capital sergipana \cite{observatorio2023}. O objetivo é fornecer uma plataforma que permita simulações para garantir um crescimento ordenado.
 
+\subsection{Stakeholders e Parcerias}
+O projeto articula parcerias estratégicas com a Academia e órgãos estaduais, alinhando-se a iniciativas governamentais de revitalização e desenvolvimento urbano \cite{govse2025}. Os \textit{stakeholders} incluem a Secretaria de Planejamento (SEPLAN) e órgãos municipais (SMTT, EMURB), que atuarão na validação dos dados e da solução proposta.
 
 \subsubsection{Mapa de Empatia do Tomador de Decisão}
 
@@ -186,13 +190,12 @@ Breve descrição das próximas subseções...\\
 
 
 \section{Quando e quanto?} \label{sec:quandoquanto}
-Breve descrição das próximas subseções...\\
 
+\subsection{Estrutura de Custos}
+A viabilidade econômica sustenta-se em uma estrutura enxuta (MVP). Os custos principais envolvem o desenvolvimento de software, infraestrutura de nuvem e o tratamento de dados (ETL). O financiamento prevê o aproveitamento de editais de inovação e convênios federais voltados para modernização urbana e regularização fundiária \cite{agenciagov2025}.
 
-
-
-
-\subsection{Riscos}
+\subsection{Gerenciamento de Riscos}
+O projeto mitiga riscos técnicos e organizacionais, como a desatualização de dados públicos e a resistência interna à mudança. A estratégia envolve validações constantes e a adoção de indicadores consolidados na literatura de cidades inteligentes \cite{iwasa2025} para garantir a robustez das decisões.
 
 \subsection{Linha do tempo}
 
@@ -241,5 +244,51 @@ Alguns periódicos e eventos exigem que sejam informados os dados refentes ao à
 
 \bibliographystyle{sbc}
 \bibliography{referencias}
+
+@article{iwasa2025,
+  title={Planejando Smart Cities: uma revis{\~a}o bibliom{\'e}trica sobre planejamento estrat{\'e}gico de cidades inteligentes},
+  author={Iwasa, F. T.},
+  journal={Revista Brasileira em Tecnologia da Informa{\c{c}}{\~a}o},
+  volume={6},
+  number={2},
+  pages={66--83},
+  year={2025}
+}
+
+@article{rdc2024,
+  title={Cidades inteligentes sustent{\'a}veis: estrat{\'e}gias para implementa{\c{c}}{\~a}o e efetiva{\c{c}}{\~a}o},
+  author={RDC},
+  journal={Revista de Direito da Cidade},
+  volume={15},
+  number={4},
+  pages={1747--1771},
+  year={2024},
+  note={Disponível em: https://www.e-publicacoes.uerj.br/rdc/}
+}
+
+@misc{observatorio2023,
+  title={Aracaju 168 anos: a expans{\~a}o urbana da capital sergipana},
+  author={{Observat{\'o}rio das Metr{\'o}poles}},
+  howpublished={Boletim Semanal, n. 776},
+  year={2023},
+  month={mar},
+  note={Acesso em: 23 mar. 2023}
+}
+
+@misc{govse2025,
+  title={Governo de Sergipe destaca a{\c{c}}{\~o}es e projetos para revitaliza{\c{c}}{\~a}o do Centro de Aracaju},
+  author={{Governo de Sergipe}},
+  year={2025},
+  month={ago},
+  note={Acesso em: 30 ago. 2025}
+}
+
+@misc{agenciagov2025,
+  title={{\'A}reas de 32 km² da Uni{\~a}o em Aracaju ser{\~a}o destinadas para habita{\c{c}}{\~a}o e regulariza{\c{c}}{\~a}o fundi{\'a}ria},
+  author={{Ag{\^e}ncia Gov}},
+  year={2025},
+  month={abr},
+  note={Acesso em: 04 abr. 2025}
+}
 
 \end{document}
