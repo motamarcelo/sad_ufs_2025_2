@@ -14,12 +14,12 @@
 
 \title{Título do Trabalho: subtítulo}
 
-\author{Beathriz Laurent Carlos Muniz\inst{1}, Nome do Autor Dois\inst{2}, \\Nome do Autor Três\inst{3}, Nome do Autor Quatro\inst{4}, \\Marcelo Pedral Mota\inst{5}, Gilton José Ferreira da Silva\inst{2} } 
+\author{Beathriz Laurent Carlos Muniz\inst{1}, Jeferson de Oliveira Santos\inst{2}, \\Nome do Autor Três\inst{3}, Nome do Autor Quatro\inst{4}, \\Marcelo Pedral Mota\inst{5}, Gilton José Ferreira da Silva\inst{2} } 
 
 \address{Departamento de Computação (DCOMP)\\ Universidade Federal de Sergipe
   (UFS)\\
   Av. Marechal Rondon, s/n -- Jardim Rosa Elze -- CEP 49100-000 \\São Cristóvão -- SE -- Brazil
-  \email{beathriz.muniz@dcomp.ufs.br, autor02@dcomp.ufs.br}
+  \email{beathriz.muniz@dcomp.ufs.br, jeferson.santos@dcomp.ufs.br}
   \email{autor03@dcomp.ufs.br, autor04@dcomp.ufs.br}
   \email{marcelo.mota@dcomp.ufs.br, gilton@dcomp.ufs.br}
 }
@@ -73,7 +73,19 @@ O \textbf{MangueSMART} é um protótipo funcional (MVP) de um Sistema de Apoio �
 
 \subsection{Trabalhos Relacionados}
 
-Apresentar uma descrição dos trabalhos (artigos semelhantes que foram buscados nas bases de pesquisa).
+A pesquisa bibliográfica realizada buscou identificar estudos que abordassem as dinâmicas de urbanização, legislação e iniciativas de cidades inteligentes no contexto específico de Aracaju (SE). A análise dos trabalhos relacionados permite compreender os desafios atuais da gestão urbana local e identificar as lacunas que justificam o desenvolvimento de um Sistema de Apoio à Decisão (SAD).
+
+No âmbito do planejamento e uso do solo, Teixeira, Dantas e Baracho (2023) analisaram o fenômeno dos vazios urbanos no centro de Aracaju. Os autores identificam que, apesar da infraestrutura consolidada, a região sofre com o esvaziamento populacional e a subutilização de lotes, muitas vezes transformados em estacionamentos ou edificações abandonadas devido à especulação imobiliária \cite{Teixeira2023}. O estudo destaca a necessidade de estratégias de \textit{Smart Cities} para revitalizar essas áreas, aproveitando o potencial construtivo existente para promover sustentabilidade e eficiência energética, contrapondo-se à expansão horizontal desordenada da cidade.
+
+Complementarmente, a questão dos riscos ambientais e da legislação urbana foi abordada por Meneses et al. (2024), que investigaram as interfaces legais do planejamento em áreas de risco, com foco no bairro Jabotiana. O estudo aponta que a intensificação da urbanização sem o devido planejamento de drenagem, somada à desatualização do Plano Diretor de Desenvolvimento Urbano (PDDU), agravou os problemas socioambientais, resultando em inundações frequentes \cite{Meneses2024}. Os autores ressaltam que a Política Nacional de Proteção e Defesa Civil deve estar integrada ao planejamento municipal para vedar ocupações em áreas vulneráveis, uma funcionalidade crítica para sistemas de gestão territorial.
+
+Sob a ótica ambiental e climática, Santos e Pinto (2020) avaliaram a correlação entre urbanização e clima urbano no bairro Atalaia. Utilizando sensoriamento remoto, a pesquisa demonstrou que o adensamento construtivo e a redução da cobertura vegetal, intensificados a partir de 2007, geraram ilhas de calor e alteraram o conforto térmico local \cite{SantosPinto2020}. Este trabalho evidencia a importância de monitorar indicadores como temperatura de superfície e albedo em relação ao uso do solo, dados essenciais para simulações de cenários urbanos.
+
+No que tange às ferramentas tecnológicas já existentes, Santos (2024) realizou uma análise crítica da plataforma ``AjuInteligente''. A autora conclui que, embora a plataforma tenha digitalizado processos burocráticos e reduzido o uso de papel, ela opera predominantemente como uma ferramenta de trâmite administrativo, e não como um instrumento de inteligência urbana analítica \cite{Santos2024}. O estudo aponta que a iniciativa visa mais ao \textit{city marketing} do que à transparência de dados ou à resolução estrutural de problemas urbanos, carecendo de métricas objetivas de impacto no planejamento da cidade.
+
+Por fim, Santos, Mello e Silva (2024) exploraram a imagem da cidade através das transformações morfológicas na Praça Fausto Cardoso, destacando como intervenções urbanísticas alteram a percepção e identidade do espaço público \cite{Santos2024Imagem}. Embora qualitativo, o trabalho reforça a necessidade de considerar o patrimônio histórico nas decisões de requalificação.
+
+\textbf{Análise Crítica e Lacunas:} Embora os trabalhos citados ofereçam diagnósticos precisos sobre problemas setoriais de Aracaju vazios urbanos, riscos de inundação, ilhas de calor e digitalização burocrática, observa-se a ausência de uma solução que integre esses dados heterogêneos em uma única plataforma de visualização e simulação. O projeto MangueSMART busca preencher essa lacuna ao propor um SAD capaz de cruzar indicadores de uso do solo, riscos ambientais e mobilidade, permitindo aos gestores não apenas diagnosticar o passado, mas simular cenários futuros para apoiar a tomada de decisão estratégica.
 
 \subsection{Arquitetura Visão-Modelo 4+1}
 
@@ -167,7 +179,7 @@ Apresentar a Equipe e a funão de cada um
 
 \begin{itemize}
   \item Beathriz Laurent Carlos Muniz: Pesquisa, correções e escrita do manuscrito;
-  \item Nome do Autor Dois: Pesquisa, correções e escrita do manuscrito;
+  \item Jeferson de Oliveira Santos: Pesquisa, correções e escrita do manuscrito;
   \item Nome do Autor Três: Pesquisa, correções e escrita do manuscrito;
   \item Nome do Autor Quatro: Pesquisa, correções e escrita do manuscrito;
   \item Nome do Autor Cinco: Pesquisa, correções e escrita do manuscrito;
