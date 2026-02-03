@@ -8,6 +8,7 @@
 \usepackage{booktabs}
 \usepackage[pdftex]{hyperref}
 \usepackage{indentfirst}
+\usepackage{float}
 
      
 \sloppy
@@ -121,34 +122,47 @@ Mais informações no link:
 
 Apresentar As telas referente aos fluxos dos processos de negócio;\\
 
-Obs.: Inclua Figuras, Tabelas, Quadros, Códigos, etc...
-
-
-A Figura \ref{fig:fluxo_sistema} apresenta um fluxo descrevendo o processo principal do sistema. 
-
-\begin{figure}[!ht]
+\begin{figure}[H]
 \centering
-\includegraphics[width=11cm]{images/dashboard_principal.png}
+\includegraphics[width=\textwidth]{images/dashboard_principal.png}
 \caption{Dashboard principal do \textbf{MangueSMART} com indicadores de ocupação territorial e mobilidade.}
 \label{fig:dashboard_principal}
 \end{figure}
 
-\begin{figure}[!ht]
+\begin{figure}[H]
 \centering
-\includegraphics[width=11cm]{images/simulacao_cenario.png}
+\includegraphics[width=\textwidth]{images/simulacao_cenario.png}
 \caption{Interface de simulação de cenários de intervenção urbana.}
 \label{fig:simulacao_cenario}
 \end{figure}
 
-\begin{figure}[!ht]
+\begin{figure}[H]
 \centering
-\includegraphics[width=12cm]
-{images/telas.jpg}
-\caption{Gráfico de prisma com a extração de dados}
-\label{fig:fluxo_sistema}
+\includegraphics[width=\textwidth]{images/mapa_urbano.png}
+\caption{Mapa urbano interativo com camadas de dados geoespaciais e indicadores de urbanização, infraestrutura e mobilidade.}
+\label{fig:mapa_urbano}
 \end{figure}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{images/indicadores.png}
+\caption{Painel de indicadores com métricas de desenvolvimento urbano e gráfico de evolução do crescimento de Aracaju.}
+\label{fig:indicadores}
+\end{figure}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{images/relatorios.png}
+\caption{Tela de relatórios para exportação e análise de dados consolidados em múltiplos formatos.}
+\label{fig:relatorios}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{images/fluxograma_manguesmart.png}
+\caption{Fluxograma do Processo de Decisão no Sistema MangueSMART.}
+\label{fig:fluxograma_manguesmart}
+\end{figure}
 
 
 \section{Quem fará o projeto}\label{sec:quem}
@@ -191,32 +205,54 @@ Breve descrição das próximas subseções...\\
 
 \section{Quando e quanto?} \label{sec:quandoquanto}
 
-\subsection{Estrutura de Custos}
-A viabilidade econômica sustenta-se em uma estrutura enxuta (MVP). Os custos principais envolvem o desenvolvimento de software, infraestrutura de nuvem e o tratamento de dados (ETL). O financiamento prevê o aproveitamento de editais de inovação e convênios federais voltados para modernização urbana e regularização fundiária \cite{agenciagov2025}.
-
 \subsection{Gerenciamento de Riscos}
 O projeto mitiga riscos técnicos e organizacionais, como a desatualização de dados públicos e a resistência interna à mudança. A estratégia envolve validações constantes e a adoção de indicadores consolidados na literatura de cidades inteligentes \cite{iwasa2025} para garantir a robustez das decisões.
 
 \subsection{Linha do tempo}
 
-O desenvolvimento do \textbf{MangueSMART} foi estruturado em três fases principais, conforme apresentado na Tabela \ref{tab:cronograma}. Esta organização permitiu que a equipe focasse inicialmente na modelagem dos dados de Aracaju antes de avançar para a interface funcional e validação.
+O desenvolvimento do \textbf{MangueSMART} foi estruturado em cinco etapas iterativas, conforme apresentado na Tabela~\ref{tab:cronograma}. A organização em ciclos curtos permitiu entregas incrementais, começando pelo levantamento e modelagem dos dados urbanos de Aracaju e evoluindo até a validação do MVP com stakeholders.
 
-\begin{table}[!ht]
+\begin{table}[H]
 \centering
-\caption{Cronograma de desenvolvimento do projeto.}
+\caption{Cronograma de desenvolvimento do projeto MangueSMART.}
 \label{tab:cronograma}
-\begin{tabular}{@{}ll p{5.5cm}@{}}
+\begin{tabular}{@{}p{2.2cm} p{3cm} p{7cm}@{}}
 \toprule
-\textbf{Período} & \textbf{Fase} & \textbf{Principais Entregas} \\ 
+\textbf{Período} & \textbf{Fase} & \textbf{Principais Entregas} \\
 \midrule
-Mês 1 & Concepção & Levantamento de dados urbanos de Aracaju e definição do Project Model Canvas. \\
-Mês 2 & Prototipagem & Desenvolvimento da interface no Lovable e integração com mapas geoespaciais. \\
-Mês 3 & Validação & Testes de usabilidade com foco em personas e ajustes finais. \\ 
+Semanas 1--2 & Concepção e Planejamento & Definição do Project Model Canvas, levantamento de requisitos com stakeholders (SEPLAN, SMTT) e identificação das fontes de dados urbanos. \\
+Semanas 3--4 & Aquisição e Modelagem de Dados & Coleta e padronização dos dados geoespaciais (uso do solo, zonas de risco, mobilidade) e definição da arquitetura do sistema. \\
+Semanas 5--7 & Desenvolvimento do MVP & Construção dos dashboards de indicadores, mapa urbano interativo com camadas de dados e módulo de relatórios. \\
+Semanas 8--9 & Simulação e Integração & Implementação da interface de simulação de cenários de intervenção urbana e integração dos módulos em uma plataforma unificada. \\
+Semanas 10--12 & Validação e Ajustes & Testes de usabilidade com a persona gestora, validação dos indicadores junto aos órgãos municipais e ajustes finais do protótipo. \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \subsection{Custos}
+
+A estimativa de custos do \textbf{MangueSMART} considera uma equipe de 5 profissionais atuando durante o ciclo de 12 semanas, com infraestrutura adequada para um sistema em ambiente de produção. A Tabela~\ref{tab:custos} apresenta o detalhamento dos custos projetados.
+
+\begin{table}[H]
+\centering
+\caption{Estimativa de custos do projeto MangueSMART (12 semanas).}
+\label{tab:custos}
+\begin{tabular}{@{}p{5.5cm} p{2.5cm} p{3.5cm}@{}}
+\toprule
+\textbf{Item} & \textbf{Frequência} & \textbf{Custo Estimado} \\
+\midrule
+Equipe de desenvolvimento (5 profissionais júnior) & Mensal & R\$ 22.500/mês \\
+Infraestrutura de nuvem (servidores, banco de dados, CDN) & Mensal & R\$ 1.000/mês \\
+Serviços de dados geoespaciais (APIs de mapas e geocodificação) & Mensal & R\$ 150/mês \\
+Licenças de software (ferramentas de BI, monitoramento, CI/CD) & Mensal & R\$ 400/mês \\
+Domínio e certificado SSL & Anual & R\$ 100/ano \\
+\midrule
+\textbf{Total estimado (3 meses)} & & \textbf{R\$ 72.250} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+O financiamento prevê o aproveitamento de editais de inovação e convênios federais voltados para modernização urbana e regularização fundiária \cite{agenciagov2025}. A maior parcela dos custos concentra-se na remuneração da equipe, o que reforça a importância de parcerias institucionais e fontes de financiamento público para viabilizar o projeto em escala real.
 
 
 \section{Limitações do Trabalho} \label{sec:ameacas}
