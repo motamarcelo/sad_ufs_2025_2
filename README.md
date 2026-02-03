@@ -33,6 +33,20 @@ O PDF será gerado em:
 build/artigo_sad_2026.pdf
 ```
 
+### Copiar PDF para a raiz do projeto
+
+Para mover o PDF compilado para a raiz do projeto:
+
+```
+cp build/artigo_sad_2026.pdf artigo_sad_2026.pdf
+```
+
+Ou para fazer isso automaticamente após cada compilação:
+
+```
+latexmk artigo_sad_2026.tex && cp build/artigo_sad_2026.pdf artigo_sad_2026.pdf
+```
+
 ## Observações
 
 - Os arquivos de compilação ficam em `build/` e são ignorados pelo Git.
