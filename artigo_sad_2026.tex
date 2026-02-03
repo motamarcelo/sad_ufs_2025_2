@@ -85,7 +85,7 @@ No que tange às ferramentas tecnológicas já existentes, Santos (2024) realizo
 
 Por fim, Santos, Mello e Silva (2024) exploraram a imagem da cidade através das transformações morfológicas na Praça Fausto Cardoso, destacando como intervenções urbanísticas alteram a percepção e identidade do espaço público \cite{Santos2024Imagem}. Embora qualitativo, o trabalho reforça a necessidade de considerar o patrimônio histórico nas decisões de requalificação.
 
-\textbf{Análise Crítica e Lacunas:} Embora os trabalhos citados ofereçam diagnósticos precisos sobre problemas setoriais de Aracaju vazios urbanos, riscos de inundação, ilhas de calor e digitalização burocrática, observa-se a ausência de uma solução que integre esses dados heterogêneos em uma única plataforma de visualização e simulação. O projeto MangueSMART busca preencher essa lacuna ao propor um SAD capaz de cruzar indicadores de uso do solo, riscos ambientais e mobilidade, permitindo aos gestores não apenas diagnosticar o passado, mas simular cenários futuros para apoiar a tomada de decisão estratégica.
+Embora os trabalhos citados ofereçam diagnósticos precisos sobre problemas setoriais de Aracaju vazios urbanos, riscos de inundação, ilhas de calor e digitalização burocrática, observa-se a ausência de uma solução que integre esses dados heterogêneos em uma única plataforma de visualização e simulação. O projeto MangueSMART busca preencher essa lacuna ao propor um SAD capaz de cruzar indicadores de uso do solo, riscos ambientais e mobilidade, permitindo aos gestores não apenas diagnosticar o passado, mas simular cenários futuros para apoiar a tomada de decisão estratégica.
 
 \subsection{Arquitetura Visão-Modelo 4+1}
 
@@ -230,8 +230,13 @@ Mês 3 & Validação & Testes de usabilidade com foco em personas e ajustes fina
 
 \section{Limitações do Trabalho} \label{sec:ameacas}
 
-Inserir informações a cerca do que não foi apresentado no trabalho.
+Embora o desenvolvimento do protótipo funcional (MVP) do sistema MangueSMART tenha alcançado os objetivos propostos de integração e visualização de dados urbanos, este trabalho apresenta limitações inerentes ao seu escopo acadêmico e às restrições técnicas e operacionais identificadas durante o processo.
 
+A primeira limitação refere-se à \textbf{disponibilidade e qualidade dos dados primários}. O sistema opera sob a premissa da existência de dados abertos e estruturados fornecidos pela administração municipal. No entanto, conforme apontado por Santos (2024), plataformas digitais preexistentes, como o AjuInteligente, muitas vezes funcionam apenas como digitalizadores de processos burocráticos, sem necessariamente prover bases de dados analíticas integradas ou dados estruturados em tempo real \cite{Santos2024}. Adicionalmente, a defasagem do Plano Diretor de Desenvolvimento Urbano (PDDU), cuja última grande atualização ocorreu em 2000, conforme destacado por Meneses et al. (2024), impõe um desafio à precisão das simulações de cenários legais, uma vez que as regras de ocupação do solo cadastradas no sistema podem não refletir a dinâmica atual da expansão urbana e das áreas de risco \cite{Meneses2024}.
+
+Em relação ao \textbf{escopo técnico e de plataforma}, o projeto limitou-se ao desenvolvimento de uma aplicação \textit{Web}, não contemplando, nesta fase, uma versão \textit{mobile} nativa, o que restringe a usabilidade em campo por agentes que necessitem de acesso via dispositivos móveis em áreas sem conectividade estável \cite{SAD2025}. Além disso, o módulo de simulação de cenários focou na demonstração de viabilidade técnica (Prova de Conceito) com um número reduzido de variáveis, não abarcando a totalidade de complexidades hidrológicas e climáticas necessárias para uma modelagem preditiva de alta precisão, como as variações microclimáticas detalhadas por Santos e Pinto (2020) que exigiriam séries temporais históricas mais robustas \cite{SantosPinto2020}.
+
+Por fim, restrições orçamentárias e de cronograma acadêmico limitaram a validação do sistema a um grupo restrito de \textit{stakeholders}. A implementação de testes de carga em larga escala, bem como a auditoria completa de segurança da informação e adequação a todos os preceitos da Lei Geral de Proteção de Dados (LGPD) em ambiente de produção, foram identificadas como riscos e atividades futuras, não sendo exauridas no presente trabalho \cite{SAD2025}.
 
 
 \section{Considerações Finais} \label{sec:consideracoes}
