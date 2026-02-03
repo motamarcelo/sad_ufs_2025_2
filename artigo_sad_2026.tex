@@ -15,13 +15,13 @@
 
 \title{Título do Trabalho: subtítulo}
 
-\author{Beathriz Laurent Carlos Muniz\inst{1}, Niceu Santos Biriba\inst{2}, \\Nome do Autor Três\inst{3}, Nome do Autor Quatro\inst{4}, \\Marcelo Pedral Mota\inst{5}, Gilton José Ferreira da Silva\inst{2} } 
+\author{Beathriz Laurent Carlos Muniz\inst{1}, Jeferson de Oliveira Santos\inst{2}, \\Niceu Santos Biriba\inst{3}, Nome do Autor Quatro\inst{4}, \\Marcelo Pedral Mota\inst{5}, Gilton José Ferreira da Silva\inst{2} } 
 
 \address{Departamento de Computação (DCOMP)\\ Universidade Federal de Sergipe
   (UFS)\\
   Av. Marechal Rondon, s/n -- Jardim Rosa Elze -- CEP 49100-000 \\São Cristóvão -- SE -- Brazil
-  \email{beathriz.muniz@dcomp.ufs.br, niceu.biriba@dcomp.ufs.br}
-  \email{autor03@dcomp.ufs.br, autor04@dcomp.ufs.br}
+  \email{beathriz.muniz@dcomp.ufs.br, jeferson.santos@dcomp.ufs.br}
+  \email{niceu.biriba@dcomp.ufs.br, autor04@dcomp.ufs.br}
   \email{marcelo.mota@dcomp.ufs.br, gilton@dcomp.ufs.br}
 }
 
@@ -76,7 +76,19 @@ O \textbf{MangueSMART} é um protótipo funcional (MVP) de um Sistema de Apoio �
 
 \subsection{Trabalhos Relacionados}
 
-Apresentar uma descrição dos trabalhos (artigos semelhantes que foram buscados nas bases de pesquisa).
+A pesquisa bibliográfica realizada buscou identificar estudos que abordassem as dinâmicas de urbanização, legislação e iniciativas de cidades inteligentes no contexto específico de Aracaju (SE). A análise dos trabalhos relacionados permite compreender os desafios atuais da gestão urbana local e identificar as lacunas que justificam o desenvolvimento de um Sistema de Apoio à Decisão (SAD).
+
+No âmbito do planejamento e uso do solo, Teixeira, Dantas e Baracho (2023) analisaram o fenômeno dos vazios urbanos no centro de Aracaju. Os autores identificam que, apesar da infraestrutura consolidada, a região sofre com o esvaziamento populacional e a subutilização de lotes, muitas vezes transformados em estacionamentos ou edificações abandonadas devido à especulação imobiliária \cite{Teixeira2023}. O estudo destaca a necessidade de estratégias de \textit{Smart Cities} para revitalizar essas áreas, aproveitando o potencial construtivo existente para promover sustentabilidade e eficiência energética, contrapondo-se à expansão horizontal desordenada da cidade.
+
+Complementarmente, a questão dos riscos ambientais e da legislação urbana foi abordada por Meneses et al. (2024), que investigaram as interfaces legais do planejamento em áreas de risco, com foco no bairro Jabotiana. O estudo aponta que a intensificação da urbanização sem o devido planejamento de drenagem, somada à desatualização do Plano Diretor de Desenvolvimento Urbano (PDDU), agravou os problemas socioambientais, resultando em inundações frequentes \cite{Meneses2024}. Os autores ressaltam que a Política Nacional de Proteção e Defesa Civil deve estar integrada ao planejamento municipal para vedar ocupações em áreas vulneráveis, uma funcionalidade crítica para sistemas de gestão territorial.
+
+Sob a ótica ambiental e climática, Santos e Pinto (2020) avaliaram a correlação entre urbanização e clima urbano no bairro Atalaia. Utilizando sensoriamento remoto, a pesquisa demonstrou que o adensamento construtivo e a redução da cobertura vegetal, intensificados a partir de 2007, geraram ilhas de calor e alteraram o conforto térmico local \cite{SantosPinto2020}. Este trabalho evidencia a importância de monitorar indicadores como temperatura de superfície e albedo em relação ao uso do solo, dados essenciais para simulações de cenários urbanos.
+
+No que tange às ferramentas tecnológicas já existentes, Santos (2024) realizou uma análise crítica da plataforma ``AjuInteligente''. A autora conclui que, embora a plataforma tenha digitalizado processos burocráticos e reduzido o uso de papel, ela opera predominantemente como uma ferramenta de trâmite administrativo, e não como um instrumento de inteligência urbana analítica \cite{Santos2024}. O estudo aponta que a iniciativa visa mais ao \textit{city marketing} do que à transparência de dados ou à resolução estrutural de problemas urbanos, carecendo de métricas objetivas de impacto no planejamento da cidade.
+
+Por fim, Santos, Mello e Silva (2024) exploraram a imagem da cidade através das transformações morfológicas na Praça Fausto Cardoso, destacando como intervenções urbanísticas alteram a percepção e identidade do espaço público \cite{Santos2024Imagem}. Embora qualitativo, o trabalho reforça a necessidade de considerar o patrimônio histórico nas decisões de requalificação.
+
+Embora os trabalhos citados ofereçam diagnósticos precisos sobre problemas setoriais de Aracaju vazios urbanos, riscos de inundação, ilhas de calor e digitalização burocrática, observa-se a ausência de uma solução que integre esses dados heterogêneos em uma única plataforma de visualização e simulação. O projeto MangueSMART busca preencher essa lacuna ao propor um SAD capaz de cruzar indicadores de uso do solo, riscos ambientais e mobilidade, permitindo aos gestores não apenas diagnosticar o passado, mas simular cenários futuros para apoiar a tomada de decisão estratégica.
 
 \subsection{Arquitetura Visão-Modelo 4+1}
 
@@ -185,7 +197,7 @@ Apresentar a Equipe e a funão de cada um
 
 \begin{itemize}
   \item Beathriz Laurent Carlos Muniz: Pesquisa, correções e escrita do manuscrito;
-  \item Nome do Autor Dois: Pesquisa, correções e escrita do manuscrito;
+  \item Jeferson de Oliveira Santos: Pesquisa, correções e escrita do manuscrito;
   \item Nome do Autor Três: Pesquisa, correções e escrita do manuscrito;
   \item Nome do Autor Quatro: Pesquisa, correções e escrita do manuscrito;
   \item Nome do Autor Cinco: Pesquisa, correções e escrita do manuscrito;
@@ -193,10 +205,11 @@ Apresentar a Equipe e a funão de cada um
 \end{itemize}
 
 \section{Como o projeto será feito?} \label{sec:Como}
-Breve descrição das próximas subseções...\\
 
+A metodologia adotada para o desenvolvimento do MangueSMART caracteriza-se como uma pesquisa de natureza aplicada e tecnológica, visando a construção de um protótipo funcional (Produto Mínimo Viável - MVP) de um Sistema de Apoio à Decisão (SAD). O processo foi estruturado em três fases distintas: Concepção e Planejamento, Modelagem Arquitetural e Desenvolvimento do Protótipo/Validação \cite{SAD2025}.
 
 \subsection{Premissas}
+O desenvolvimento do sistema parte da premissa da disponibilidade de dados abertos governamentais ou amostras fornecidas pelas secretarias parceiras (SEPLOG, SMTT), conforme identificado na fase de concepção. Assume-se também o acesso contínuo aos stakeholders chave ("Persona Mariana Souza") para validações quinzenais das funcionalidades do MVP.
 
 \subsection{Grupo de entregas}
 
@@ -257,8 +270,13 @@ O financiamento prevê o aproveitamento de editais de inovação e convênios fe
 
 \section{Limitações do Trabalho} \label{sec:ameacas}
 
-Inserir informações a cerca do que não foi apresentado no trabalho.
+Embora o desenvolvimento do protótipo funcional (MVP) do sistema MangueSMART tenha alcançado os objetivos propostos de integração e visualização de dados urbanos, este trabalho apresenta limitações inerentes ao seu escopo acadêmico e às restrições técnicas e operacionais identificadas durante o processo.
 
+A primeira limitação refere-se à disponibilidade e qualidade dos dados primários. O sistema opera sob a premissa da existência de dados abertos e estruturados fornecidos pela administração municipal. No entanto, conforme apontado por Santos (2024), plataformas digitais preexistentes, como o AjuInteligente, muitas vezes funcionam apenas como digitalizadores de processos burocráticos, sem necessariamente prover bases de dados analíticas integradas ou dados estruturados em tempo real \cite{Santos2024}. Adicionalmente, a defasagem do Plano Diretor de Desenvolvimento Urbano (PDDU), cuja última grande atualização ocorreu em 2000, conforme destacado por Meneses et al. (2024), impõe um desafio à precisão das simulações de cenários legais, uma vez que as regras de ocupação do solo cadastradas no sistema podem não refletir a dinâmica atual da expansão urbana e das áreas de risco \cite{Meneses2024}.
+
+Em relação ao escopo técnico e de plataforma, o projeto limitou-se ao desenvolvimento de uma aplicação \textit{Web}, não contemplando, nesta fase, uma versão \textit{mobile} nativa, o que restringe a usabilidade em campo por agentes que necessitem de acesso via dispositivos móveis em áreas sem conectividade estável \cite{SAD2025}. Além disso, o módulo de simulação de cenários focou na demonstração de viabilidade técnica (Prova de Conceito) com um número reduzido de variáveis, não abarcando a totalidade de complexidades hidrológicas e climáticas necessárias para uma modelagem preditiva de alta precisão, como as variações microclimáticas detalhadas por Santos e Pinto (2020) que exigiriam séries temporais históricas mais robustas \cite{SantosPinto2020}. 
+
+Por fim, restrições orçamentárias e de cronograma acadêmico limitaram a validação do sistema a um grupo restrito de \textit{stakeholders}. A implementação de testes de carga em larga escala, bem como a auditoria completa de segurança da informação e adequação a todos os preceitos da Lei Geral de Proteção de Dados (LGPD) em ambiente de produção, foram identificadas como riscos e atividades futuras, não sendo exauridas no presente trabalho \cite{SAD2025}.
 
 
 \section{Considerações Finais} \label{sec:consideracoes}
