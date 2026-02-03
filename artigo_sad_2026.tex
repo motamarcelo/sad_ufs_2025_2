@@ -15,13 +15,13 @@
 
 \title{MangueSMART: Sistema de Apoio à Decisão para o Planejamento Urbano Inteligente de Aracaju}
 
-\author{Beathriz Laurent Carlos Muniz\inst{1}, Jeferson de Oliveira Santos\inst{2}, \\Nome do Autor Quatro\inst{3}, Marcelo Pedral Mota\inst{4}, \\Niceu Santos Biriba\inst{5}, Gilton José Ferreira da Silva\inst{2} } 
+\author{Beathriz Laurent Carlos Muniz\inst{1}, Jeferson de Oliveira Santos\inst{2}, \\João Marcos Peixoto Cavalcante\inst{3}, Marcelo Pedral Mota\inst{4}, \\Niceu Santos Biriba\inst{5}, Gilton José Ferreira da Silva\inst{2} } 
 
 \address{Departamento de Computação (DCOMP)\\ Universidade Federal de Sergipe
   (UFS)\\
   Av. Marechal Rondon, s/n -- Jardim Rosa Elze -- CEP 49100-000 \\São Cristóvão -- SE -- Brazil
   \email{beathriz.muniz@dcomp.ufs.br, jeferson.santos@dcomp.ufs.br}
-  \email{autor03@dcomp.ufs.br, marcelo.mota@dcomp.ufs.br}
+  \email{joao.cavalcante@dcomp.ufs.br, marcelo.mota@dcomp.ufs.br}
   \email{niceu.biriba@dcomp.ufs.br, gilton@dcomp.ufs.br}
 }
 
@@ -29,14 +29,9 @@
 
 \maketitle
 
-\begin{abstract}
-\textbf {Context:} The rapid urban growth of Aracaju, Sergipe, characterized by verticalization and peripheral expansion, demands more structured and data-driven urban planning to ensure socio-environmental sustainability. \textbf {Objective:} This work aims to develop and validate a functional prototype (MVP) of a Decision Support System (DSS) named MangueSMART, designed for smart urban planning in Aracaju. \textbf {Method:} The methodological procedures involve the integration of urban data (ETL), the use of the 4+1 View Model for software architecture, and the Project Model Canvas for strategic management. \textbf {Results:} The expected results include the creation of integrated dashboards and reports that allow scenario simulation for land use and mobility, reducing data analysis time for public managers. \textbf {Conclusions:} The system provides a platform to align local policies with smart city guidelines, promoting more inclusive and sustainable urban governance.
-\end{abstract}
+\begin{abstract} \textbf{Context:} Aracaju's rapid urban expansion demands data-driven planning for socio-environmental sustainability. \textbf{Objective:} This study develops and validates MangueSMART, a Decision Support System (DSS) prototype for smart urban planning. \textbf{Method:} The approach integrates urban data (ETL) using the 4+1 View Model and Project Model Canvas. \textbf{Results:} The system enables scenario simulations and integrated dashboards, optimizing analysis time for public managers. \textbf{Conclusions:} MangueSMART aligns local policies with smart city guidelines, fostering inclusive and sustainable governance. \end{abstract}
      
-\begin{resumo} 
-  \textbf{Contexto:} O crescimento urbano acelerado de Aracaju, marcado pela verticalização e expansão periférica, exige um planejamento urbano estruturado e orientado por dados para garantir a sustentabilidade socioambiental. \textbf{Objetivo:} Este trabalho tem como objetivo desenvolver e validar um protótipo funcional (MVP) de um Sistema de Apoio à Decisão (SAD) denominado MangueSMART, focado no planejamento urbano inteligente em Aracaju. \textbf{Método:} Os procedimentos metodológicos incluem a integração de dados urbanos (ETL), a aplicação da arquitetura Visão-Modelo 4+1 e o uso do Project Model Canvas para o gerenciamento estratégico. \textbf{Resultados:} Espera-se a criação de dashboards e relatórios integrados que permitam a simulação de cenários de uso do solo e mobilidade, reduzindo o tempo de análise para gestores públicos. \textbf{Conclusões:} O sistema oferece uma plataforma para alinhar políticas locais às diretrizes de cidades inteligentes, promovendo uma gestão urbana mais inclusiva e sustentável.
-\end{resumo}
-
+\begin{resumo} \textbf{Contexto:} A expansão urbana de Aracaju exige um planejamento estruturado e orientado por dados para assegurar a sustentabilidade. \textbf{Objetivo:} Este trabalho desenvolve e valida o MangueSMART, um protótipo de Sistema de Apoio à Decisão (SAD) para o planejamento urbano inteligente. \textbf{Método:} Utilizou-se integração de dados (ETL), arquitetura Visão-Modelo 4+1 e Project Model Canvas. \textbf{Resultados:} O sistema provê dashboards e simulações de cenários, otimizando o tempo de análise técnica dos gestores. \textbf{Conclusões:} A solução alinha a gestão de Aracaju às diretrizes de cidades inteligentes e governança sustentável. \end{resumo}
 
 \section{Introdução} \label{sec:introducao}
 O projeto MangueSMART surge em um cenário onde o município de Aracaju apresenta um crescimento urbano acelerado, resultando em desafios significativos de acessibilidade, mobilidade e infraestrutura. Atualmente, a gestão urbana enfrenta dificuldades devido à fragmentação de dados entre departamentos e à carência de ferramentas integradas que apoiem a tomada de decisão estratégica. Para mitigar esses problemas, este trabalho propõe a adoção do Project Model Canvas como instrumento de planejamento, visando a criação de um Sistema de Apoio à Decisão (SAD) que articule indicadores urbanos e simulações de desenvolvimento.
@@ -52,19 +47,16 @@ Além disso, iniciativas recentes buscam mitigar o déficit habitacional, como a
 A relevância do projeto \textit{MangueSMART} reside na mudança de paradigma para o conceito de cidades inteligentes, onde o planejamento deixa de ser reativo para se tornar orientado por dados (\textit{data-driven}). Segundo Iwasa \cite{iwasa2025}, o planejamento estratégico é vital para a efetivação dessas tecnologias. A implementação de um Sistema de Apoio à Decisão (SAD) justifica-se pela necessidade de articular indicadores de uso do solo e mobilidade, alinhando a administração pública a diretrizes de sustentabilidade e justiça urbana \cite{rdc2024}.
 
 \section{Objetivos} 
-Objetivos... 1 parágrafo;
+O objetivo geral deste trabalho é desenvolver e validar um protótipo funcional, especificamente um Produto Mínimo Viável (MVP), de um Sistema de Apoio à Decisão (SAD) denominado MangueSMART. O foco do sistema é o planejamento urbano inteligente da cidade de Aracaju, integrando dados para permitir a simulação de cenários de uso do solo e mobilidade, visando reduzir o tempo de análise técnica de gestores públicos e promover a sustentabilidade socioambiental.
 
 \section{Benefícios} 
 
 O principal benefício do \textit{MangueSMART} é a entrega de um protótipo funcional de Sistema de Apoio à Decisão que centraliza dados urbanos dispersos. A literatura destaca que cidades inteligentes sustentáveis dependem de estratégias de implementação que integrem tecnologia e gestão \cite{rdc2024}. Espera-se reduzir drasticamente o tempo de análise técnica para aprovação de projetos e definição de políticas públicas. A longo prazo, o sistema visa alinhar o planejamento de Aracaju aos princípios de governança digital e eficiência, conforme discutido nas revisões sobre planejamento de \textit{Smart Cities} \cite{iwasa2025}.
 
 \section{Descrição das próximas seções} 
-Descrição das próximas seções do trabalho ... 1 parágrafo.
+O trabalho está estruturado da seguinte forma: a Seção \ref{sec:oque} detalha o produto, os trabalhos relacionados e as visões arquiteturais (lógica, desenvolvimento, processo e física). A Seção \ref{sec:quem} apresenta a equipe e a persona do cliente-alvo. A Seção \ref{sec:Como} descreve a metodologia, premissas e entregas. A Seção \ref{sec:quandoquanto} aborda o cronograma e os custos. Por fim, as Seções \ref{sec:ameacas} e \ref{sec:consideracoes} discutem as limitações do projeto e apresentam as considerações finais.
 
-
-\section{O que será feito? } \label{sec:oque}
-
-Breve descrição das próximas subseções...\\
+\section{O que será feito?} \label{sec:oque}
 
 \subsection{Produto}
 
@@ -72,23 +64,12 @@ O \textbf{MangueSMART} é um protótipo funcional (MVP) de um Sistema de Apoio �
 
 \subsection{Trabalhos Relacionados}
 
-A pesquisa bibliográfica realizada buscou identificar estudos que abordassem as dinâmicas de urbanização, legislação e iniciativas de cidades inteligentes no contexto específico de Aracaju (SE). A análise dos trabalhos relacionados permite compreender os desafios atuais da gestão urbana local e identificar as lacunas que justificam o desenvolvimento de um Sistema de Apoio à Decisão (SAD).
+A literatura sobre Aracaju revela diagnósticos setoriais críticos: Teixeira et al. (2023) apontam a subutilização de vazios urbanos centrais; Meneses et al. (2024) destacam os riscos de inundação agravados pela desatualização do Plano Diretor ; e Santos e Pinto (2020) demonstram o surgimento de ilhas de calor devido ao adensamento construtivo.
 
-No âmbito do planejamento e uso do solo, Teixeira, Dantas e Baracho (2023) analisaram o fenômeno dos vazios urbanos no centro de Aracaju. Os autores identificam que, apesar da infraestrutura consolidada, a região sofre com o esvaziamento populacional e a subutilização de lotes, muitas vezes transformados em estacionamentos ou edificações abandonadas devido à especulação imobiliária \cite{Teixeira2023}. O estudo destaca a necessidade de estratégias de \textit{Smart Cities} para revitalizar essas áreas, aproveitando o potencial construtivo existente para promover sustentabilidade e eficiência energética, contrapondo-se à expansão horizontal desordenada da cidade.
-
-Complementarmente, a questão dos riscos ambientais e da legislação urbana foi abordada por Meneses et al. (2024), que investigaram as interfaces legais do planejamento em áreas de risco, com foco no bairro Jabotiana. O estudo aponta que a intensificação da urbanização sem o devido planejamento de drenagem, somada à desatualização do Plano Diretor de Desenvolvimento Urbano (PDDU), agravou os problemas socioambientais, resultando em inundações frequentes \cite{Meneses2024}. Os autores ressaltam que a Política Nacional de Proteção e Defesa Civil deve estar integrada ao planejamento municipal para vedar ocupações em áreas vulneráveis, uma funcionalidade crítica para sistemas de gestão territorial.
-
-Sob a ótica ambiental e climática, Santos e Pinto (2020) avaliaram a correlação entre urbanização e clima urbano no bairro Atalaia. Utilizando sensoriamento remoto, a pesquisa demonstrou que o adensamento construtivo e a redução da cobertura vegetal, intensificados a partir de 2007, geraram ilhas de calor e alteraram o conforto térmico local \cite{SantosPinto2020}. Este trabalho evidencia a importância de monitorar indicadores como temperatura de superfície e albedo em relação ao uso do solo, dados essenciais para simulações de cenários urbanos.
-
-No que tange às ferramentas tecnológicas já existentes, Santos (2024) realizou uma análise crítica da plataforma ``AjuInteligente''. A autora conclui que, embora a plataforma tenha digitalizado processos burocráticos e reduzido o uso de papel, ela opera predominantemente como uma ferramenta de trâmite administrativo, e não como um instrumento de inteligência urbana analítica \cite{Santos2024}. O estudo aponta que a iniciativa visa mais ao \textit{city marketing} do que à transparência de dados ou à resolução estrutural de problemas urbanos, carecendo de métricas objetivas de impacto no planejamento da cidade.
-
-Por fim, Santos, Mello e Silva (2024) exploraram a imagem da cidade através das transformações morfológicas na Praça Fausto Cardoso, destacando como intervenções urbanísticas alteram a percepção e identidade do espaço público \cite{Santos2024Imagem}. Embora qualitativo, o trabalho reforça a necessidade de considerar o patrimônio histórico nas decisões de requalificação.
-
-Embora os trabalhos citados ofereçam diagnósticos precisos sobre problemas setoriais de Aracaju vazios urbanos, riscos de inundação, ilhas de calor e digitalização burocrática, observa-se a ausência de uma solução que integre esses dados heterogêneos em uma única plataforma de visualização e simulação. O projeto MangueSMART busca preencher essa lacuna ao propor um SAD capaz de cruzar indicadores de uso do solo, riscos ambientais e mobilidade, permitindo aos gestores não apenas diagnosticar o passado, mas simular cenários futuros para apoiar a tomada de decisão estratégica.
-
+No campo tecnológico, a plataforma "AjuInteligente" é criticada por ser meramente administrativa, carecendo de inteligência analítica para o planejamento urbano. Embora esses estudos ofereçam dados precisos, há uma carência de ferramentas que integrem essas informações heterogêneas. O MangueSMART supre essa lacuna ao propor um SAD que cruza indicadores de uso do solo, riscos ambientais e mobilidade, permitindo a simulação de cenários futuros para o suporte à decisão estratégica.
 \subsection{Arquitetura Visão-Modelo 4+1}
 
-\subsection{Visão Lógica}
+\subsubsection*{Visão Lógica}
 
 Diagrama de classes:
 
@@ -98,7 +79,7 @@ Diagrama de classes:
 \label{fig:diagrama_de_classes}
 \end{figure}
 
-\subsection{Visão de Desenvolvimento}
+\subsubsection*{Visão de Desenvolvimento}
 
 Diagrama de componentes:
 
@@ -109,7 +90,7 @@ Diagrama de componentes:
 \end{figure}
 
 
-\subsection{Visão de Processo}
+\subsubsection*{Visão de Processo}
 
 Diagrama de atividades:
 
@@ -119,7 +100,7 @@ Diagrama de atividades:
 \label{fig:diagrama_de_atividades}
 \end{figure}
 
-\subsection{Visão Física}
+\subsubsection*{Visão Física}
 
 Diagrama de Implantação:
 
@@ -129,7 +110,7 @@ Diagrama de Implantação:
 \label{fig:diagrama_de_implantacao}
 \end{figure}
 
-\subsection{Visão de Caso de Uso}
+\subsubsection*{Visão de Caso de Uso}
 
 Diagramas de Casos de Uso:
 
@@ -252,12 +233,11 @@ Com base nesse mapeamento, o \textit{MangueSMART} foi projetado para atuar diret
 
 
 \subsection{Equipe}
-Apresentar a Equipe e a função de cada um
 
 \begin{itemize}
   \item Beathriz Laurent Carlos Muniz: Coesão e coerência textual do artigo, elaboração do resumo e abstract, construção da introdução e conclusões, além da revisão final e padronização do documento em LaTeX;
   \item Jeferson de Oliveira Santos: Embasamento teórico do trabalho, levantamento e análise de trabalhos relacionados, definição da metodologia e premissas adotadas, descrição das limitações do projeto e organização das referências bibliográficas (.bib);
-  \item Nome do Autor Três: Definição da arquitetura de software do projeto, elaboração dos diagramas e descrição das visões arquiteturais (lógica, desenvolvimento, processo, física e casos de uso), garantindo a viabilidade técnica da solução proposta;
+  \item João Marcos Peixoto Cavalcante: Definição da arquitetura de software do projeto, elaboração dos diagramas e descrição das visões arquiteturais (lógica, desenvolvimento, processo, física e casos de uso), garantindo a viabilidade técnica da solução proposta;
   \item Marcelo Pedral Mota: Análise de requisitos, prototipagem de interface (UX/UI), definição do escopo do produto e cronograma de entregas;
   \item Niceu Santos Biriba: Definição da justificativa do projeto sob a ótica de negócio, análise dos benefícios, identificação dos stakeholders, elaboração do mapa de empatia, análise de custos, riscos e viabilidade do projeto;
   \item Gilton José Ferreira da Silva: Coordenação do trabalho, correções e direcionamentos da pesquisa.
@@ -271,9 +251,22 @@ A metodologia adotada para o desenvolvimento do MangueSMART caracteriza-se como 
 O desenvolvimento do sistema parte da premissa da disponibilidade de dados abertos governamentais ou amostras fornecidas pelas secretarias parceiras (SEPLOG, SMTT), conforme identificado na fase de concepção. Assume-se também o acesso contínuo aos stakeholders chave ("Persona Mariana Souza") para validações quinzenais das funcionalidades do MVP.
 
 \subsection{Grupo de entregas}
+As principais entregas do projeto estão alinhadas aos ciclos de desenvolvimento detalhados na Tabela \ref{tab:cronograma}. O conjunto de artefatos inclui:
+\begin{itemize}
+    \item \textbf{Planejamento:} Project Model Canvas e Documento de Requisitos.
+    \item \textbf{Dados:} Base de dados geoespaciais padronizada com camadas de uso do solo e mobilidade.
+    \item \textbf{Software:} Protótipo funcional (MVP) composto por Dashboards de indicadores e Mapa Urbano Interativo.
+    \item \textbf{Análise:} Módulo de simulação de cenários de intervenção urbana e gerador de relatórios estratégicos.
+\end{itemize}
 
 \subsection{Restrições}
-
+O desenvolvimento do MangueSMART enfrenta limitações que delimitam o alcance do MVP:
+\begin{itemize}
+    \item \textbf{Tecnológica:} O projeto foca exclusivamente no desenvolvimento de uma aplicação \textit{Web}, não contemplando versões \textit{mobile} nativas nesta fase.
+    \item \textbf{Dados:} A precisão do sistema é condicionada à qualidade dos dados abertos fornecidos pela prefeitura; a defasagem do Plano Diretor de Desenvolvimento Urbano (PDDU) pode gerar discrepâncias nas simulações legais.
+    \item \textbf{Científica:} O módulo de simulação atua como uma Prova de Conceito, simplificando variáveis microclimáticas e hidrológicas complexas.
+    \item \textbf{Operacional:} A validação técnica foi realizada com um grupo restrito de \textit{stakeholders}, sem a execução de testes de carga em larga escala.
+\end{itemize}
 
 \section{Quando e quanto?} \label{sec:quandoquanto}
 
@@ -339,16 +332,11 @@ Por fim, restrições orçamentárias e de cronograma acadêmico limitaram a val
 
 
 \section{Considerações Finais} \label{sec:consideracoes}
-Descrição das atividades realizadas para atingir o objetivo do trabalho... 2 paragrafo\\
-Descrição da metodologia utilizada para atingir o objetivo do trabalho... 1 paragrafo\\
-Descrição dos pontos fracos ou que possam inviabilizar a credibilidade do trabalho... 1 paragrafo\\
-Descrição das atividades futuras para se concluir o trabalho... 1 paragrafo\\
+O desenvolvimento do MangueSMART demonstrou ser uma solução viável para superar a fragmentação de dados na gestão pública de Aracaju, permitindo uma transição para o planejamento orientado por dados (data-driven). Embora o protótipo tenha validado a integração de indicadores e a simulação de cenários, o sucesso a longo prazo depende da atualização das bases de dados municipais e da modernização do Plano Diretor. Atividades futuras incluem a implementação de testes de carga, auditoria de segurança conforme a LGPD e o desenvolvimento de módulos preditivos mais robustos.
 
 \section*{Agradecimentos} \label{sec:agradecimentos}
 
-Esta seção tem como objetivo agradecer a todas as pessoas e instituições que ajudaram na pesquisa, mas que não se qualificam para autoria.
-
-Alguns periódicos e eventos exigem que sejam informados os dados refentes ao às organizações que financiaram a pesquisa.
+Esta seção é reservada para expressar gratidão às instituições e indivíduos que apoiaram a pesquisa, como a Universidade Federal de Sergipe (UFS), a Secretaria de Planejamento de Aracaju (SEPLAN) e os membros da equipe de desenvolvimento.
 
 
 
